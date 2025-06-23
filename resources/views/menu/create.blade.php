@@ -46,10 +46,21 @@
                                         </div>
                                     </div>
                                     <div class="row g-3 mb-3">
+                                        
                                         <div class="col-md-12">
                                             <label for="file" class="form-label">รูปภาพเมนู : </label>
                                             <input class="form-control" type="file" id="file" name="file">
                                         </div>
+                                        <div class="row g-3 mb-3">
+                                        <div class="col-md-6">
+                                            <label for="start_time" class="form-label">เวลาเริ่มต้น : </label>
+                                            <input type="time" class="form-control" id="start_time" name="start_time" value="{{ old('start_time', isset($info) ? $info->start_time : '') }}">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="end_time" class="form-label">เวลาสิ้นสุด : </label>
+                                            <input type="time" class="form-control" id="end_time" name="end_time" value="{{ old('end_time', isset($info) ? $info->end_time : '') }}">
+                                        </div>
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="card-footer d-flex justify-content-end">
